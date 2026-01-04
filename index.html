@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>PTE 65分备考清单 (2025最新考情版)</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#667eea">
+    <meta name="description" content="2025最新PTE 65分备考清单，45个科学任务，三阶段轻松拿高分，支持离线使用">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="PTE备考">
+    <meta name="application-name" content="PTE备考">
+    <meta name="msapplication-TileColor" content="#667eea">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9IlVybCgjZ3JhZGllbnQwX2xpbmVhcl80OF8xKSIvPgo8cGF0aCBkPSJNNDggNDBIMTQ0VjE1Mkg0OFY0MFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik03MiA4MEgxMjBWMTA0SDcyVjgwWiIgZmlsbD0id2hpdGUiLz4KPHA+PHRzcGFuIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IndoaXRlIj4GVDE8L3RzcGFuPjwvcD4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQwX2xpbmVhcl80OF8xIiB4MT0iMCIgeTE9IjAiIHgyPSIxOTIiIHkyPSIxOTIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzY2N2VlYSIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM3NjRiYTIiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNCIgZmlsbD0iIzY2N2VlYSIvPgo8cGF0aCBkPSJNOCA4aDE2djI0SDhWOFoIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMTIgMTZoLjh2NGgwtjhWMTZaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4=">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PTE 65分备考清单</h1>
+            <div class="target-info">
+                <span class="target-score">目标: 65+</span>
+                <span class="study-period">周期: 2-4周</span>
+                <span class="exam-version">2025最新版</span>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="totalTasks">0</span>
+                    <span class="stat-label">总任务</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="completedTasks">0</span>
+                    <span class="stat-label">已完成</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="progressPercentage">0%</span>
+                    <span class="stat-label">进度</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="currentStage">1</span>
+                    <span class="stat-label">阶段</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- 备考阶段选择 -->
+            <section class="stage-tabs">
+                <button class="stage-btn active" data-stage="1">阶段1: 打磨武器</button>
+                <button class="stage-btn" data-stage="2">阶段2: 饱和攻击</button>
+                <button class="stage-btn" data-stage="3">阶段3: 实战演习</button>
+            </section>
+
+            <!-- 优先级筛选 -->
+            <section class="priority-tabs">
+                <button class="priority-btn active" data-priority="all">全部优先级</button>
+                <button class="priority-btn priority-1" data-priority="1">P1: 必须死磕</button>
+                <button class="priority-btn priority-2" data-priority="2">P2: 套用模板</button>
+                <button class="priority-btn priority-3" data-priority="3">P3: 随缘保分</button>
+            </section>
+
+            <!-- 题型分类 -->
+            <section class="category-tabs">
+                <button class="tab-btn active" data-category="all">全部题型</button>
+                <button class="tab-btn" data-category="speaking">口语</button>
+                <button class="tab-btn" data-category="writing">写作</button>
+                <button class="tab-btn" data-category="reading">阅读</button>
+                <button class="tab-btn" data-category="listening">听力</button>
+            </section>
+
+            <!-- 添加任务 -->
+            <section class="add-task">
+                <div class="input-group">
+                    <input type="text" id="taskInput" placeholder="添加新的备考任务...">
+                    <select id="categorySelect">
+                        <option value="speaking">口语</option>
+                        <option value="writing">写作</option>
+                        <option value="reading">阅读</option>
+                        <option value="listening">听力</option>
+                    </select>
+                    <select id="prioritySelect">
+                        <option value="1">P1: 必须死磕</option>
+                        <option value="2">P2: 套用模板</option>
+                        <option value="3">P3: 随缘保分</option>
+                    </select>
+                    <select id="stageSelect">
+                        <option value="1">阶段1</option>
+                        <option value="2">阶段2</option>
+                        <option value="3">阶段3</option>
+                    </select>
+                    <button id="addTaskBtn">添加</button>
+                </div>
+            </section>
+
+            <!-- 备考建议 -->
+            <section class="study-tips" id="studyTips">
+                <div class="tip-card">
+                    <h3>💡 当前阶段建议</h3>
+                    <p id="stageTip">2025版阶段1：专注核心能力+新增题型。RS/WFD保持高强度训练，RA仅练口语流利度，重点攻克SGD和RTS新题型，DI/RL等人工审核题型要加入个人理解避免纯模板。</p>
+                </div>
+            </section>
+
+            <!-- 任务列表 -->
+            <section class="task-list" id="taskList">
+                <!-- 任务列表将在这里动态生成 -->
+            </section>
+        </main>
+    </div>
+
+    <!-- PWA安装提示 -->
+    <div id="installPrompt" class="install-prompt" style="display: none;">
+        <div class="install-prompt-content">
+            <div class="install-icon">📱</div>
+            <h3>安装PTE备考App</h3>
+            <p>添加到手机桌面，离线也能使用！</p>
+            <div class="install-buttons">
+                <button id="installBtn" class="install-btn-primary">立即安装</button>
+                <button id="installCancel" class="install-btn-secondary">稍后再说</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 离线提示 -->
+    <div id="offlineToast" class="offline-toast" style="display: none;">
+        <span>📵 您当前离线，数据已自动保存</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
